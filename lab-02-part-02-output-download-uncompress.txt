@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,7 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
+hello there
 
 
 ==========
@@ -39,7 +39,7 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
-
+>
 
 ==========
 4. Uh-oh... we're stuck!
@@ -56,7 +56,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
+good mornin'
 
 
 ==========
@@ -66,7 +66,7 @@ $ echo *
 
 What happens?
 ----------
-
+Copy of Cuevitas.ai Grid Map Legend.rtf MTEC2230_02:15.rtf Sound Effects Server Student Temporary Work Terminal Saved Output_Matsakova2 even-more-stuff more-stuff oh photoshop_grid stuff
 
 
 ==========
@@ -75,7 +75,7 @@ What happens?
 Write the command that you used below:
 ----------
 
-
+clear
 
 ==========
 We're going to practice downloading files from a web site.  We'll use this practice to download more lab materials!
@@ -87,7 +87,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 
 ==========
@@ -97,7 +102,7 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head><meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"><meta content="noodp" name="robots"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title>
 
 
 ==========
@@ -106,22 +111,22 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 Write the command you used below.  Also copy and paste the output below.
 ----------
 
-
+curl -o google.html www.google.com 
 
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-
-
+pwd
+/Users/student/Desktop
 
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+cd ~
 
 
 ==========
@@ -137,6 +142,10 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
+curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  935k  100  935k    0     0  1395k      0 --:--:-- --:--:-- --:--:-- 4032k
 
 
 
@@ -145,7 +154,7 @@ Write down the command that you used to download the file below.  Additionally, 
 
 Write down the command that you used to uncompress the file.
 ----------
-
+unzip mtec1002-lab-02.zip
 
 
 ==========
@@ -154,7 +163,7 @@ Write down the command that you used to uncompress the file.
 Copy and paste the output below.
 ----------
 
-
+books	logs	web
 
 ==========
 We're going to mess around with archiving and compressing files.  We'll make a directory with a file in it... archive and compress it.... and uncompress it elsewhere.
@@ -164,7 +173,14 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+Adlm			Movies			isus
+Adobe			Music			mtec1002
+Applications		New Unity Project	mtec1002-lab-02
+Desktop			Pictures		mtec1002-lab-02.zip
+Documents		Public			pymel.log
+Downloads		Things			stuff
+Library			__MACOSX		test
+MPLABXProjects		ipe.properties		xgen
 
 
 ==========
@@ -176,6 +192,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
+hello.txt
 
 
 
@@ -188,7 +205,8 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+a stuff
+a stuff/hello.txt
 
 
 ==========
@@ -199,6 +217,8 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
+a stuff
+a stuff/hello.txt
 
 
 ==========
@@ -207,6 +227,15 @@ Copy and paste the output below.
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
 
+Adlm			Music			mtec1002-lab-02
+Adobe			New Unity Project	mtec1002-lab-02.zip
+Applications		Pictures		pymel.log
+Desktop			Public			stuff
+Documents		Things			stuff.tar
+Downloads		__MACOSX		test
+Library			ipe.properties		xgen
+MPLABXProjects		isus
+Movies			mtec1002
 
 
 ==========
@@ -216,7 +245,15 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+Adlm			Music			mtec1002-lab-02
+Adobe			New Unity Project	mtec1002-lab-02.zip
+Applications		Pictures		pymel.log
+Desktop			Public			stuff
+Documents		Things			stuff.tar.gz
+Downloads		__MACOSX		test
+Library			ipe.properties		xgen
+MPLABXProjects		isus
+Movies			mtec1002
 
 
 ==========
@@ -230,7 +267,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -239,6 +276,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
+books		logs		stuff		stuff.tar.gz	web
 
 
 
@@ -258,9 +296,15 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
+curl -o secret.tar.gz http://foureyes.github.io/mtec1002-spring2014/labs/02/secret.tar.gz
+tar -xvf secret.tar.gz
 
 
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+x secret/
+x secret/I HEARD YOU
+x secret/LIKE FILES
+x secret/SO I PUT THREE FILES IN YOUR FILE
